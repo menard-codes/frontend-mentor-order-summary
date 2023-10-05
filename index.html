@@ -9,7 +9,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./dist/images/favicon-32x32.png"
     />
 
     <title>Frontend Mentor | Order summary card</title>
@@ -17,16 +17,41 @@
     <link rel="stylesheet" href="./dist/css/index.css" />
   </head>
   <body>
-    Order Summary You can now listen to millions of songs, audiobooks, and
-    podcasts on any device anywhere you like! Annual Plan $59.99/year Change
-    Proceed to Payment Cancel Order
+    <main>
+      <div>
+        <picture>
+          <img
+            src="./dist/images/illustration-hero.svg"
+            alt="Woman on a headset listening to and enjoying a music"
+          />
+        </picture>
+        <div>
+          <h2>Order Summary</h2>
+          <p>
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+          <div>
+            <img src="./dist/images/icon-music.svg" alt="" />
+            <div>
+              <p>Annual Plan</p>
+              <p>$59.99/year</p>
+            </div>
+            <a href="#">Change</a>
+          </div>
+        </div>
+        <div>
+          <a href="#">Proceed to Payment</a>
+          <a href="#">Cancel Order</a>
+        </div>
+      </div>
+    </main>
 
-    <!-- * Add Attribution later -->
-    <!-- <div class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+    </footer>
   </body>
 </html>
