@@ -1,0 +1,64 @@
+// padding, font weights
+@use 'abstracts/functions' as func;
+
+$padding-sizes: (
+  '9': 9,
+  '16': 16,
+  '19': 19,
+  '26': 26,
+  '39': 39,
+);
+
+$sides: ('', 'top', 'bottom', 'left', 'right');
+
+@each $side in $sides {
+  @each $p-size-label, $p-size in $padding-sizes {
+    @if $side == '' {
+      .padding-#{$p-size-label} {
+        padding: func.pxToEm($p-size);
+      }
+    } @else {
+      .padding-#{$side}-#{$p-size-label} {
+        padding: {
+          #{$side}: func.pxToEm($p-size);
+        }
+      }
+    }
+  }
+}
+
+$font-weights: (
+  '500': 500,
+  '700': 700,
+  '900': 900,
+);
+@each $weight-label, $weight in $font-weights {
+  .font-weight-#{$weight-label} {
+    font-weight: $weight;
+  }
+}
+
+$text-alignment: ('start', 'center', 'end', 'justify');
+@each $t in $text-alignment {
+  .text-#{$t} {
+    text-align: $t;
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+$gaps: (
+  '26': 26,
+  '9': 9,
+);
+@each $g-label, $g in $gaps {
+  .gap-#{$g-label} {
+    gap: func.pxToEm($g);
+  }
+}

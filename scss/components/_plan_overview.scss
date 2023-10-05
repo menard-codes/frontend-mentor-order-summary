@@ -1,0 +1,18 @@
+@use 'abstracts/functions' as func;
+@use 'abstracts/variables' as var;
+
+.plan-overview {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+
+  padding: func.pxToEm(16);
+  background-color: var.$clr-very-pale-blue;
+  border-radius: func.pxToEm(14);
+
+  a {
+    justify-self: end;
+    font-weight: 500;
+  }
+}

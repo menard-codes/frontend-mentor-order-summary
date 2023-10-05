@@ -1,0 +1,30 @@
+@use 'sass:color';
+@use 'abstracts/functions' as func;
+@use 'abstracts/variables' as var;
+
+@mixin btn($bg-color, $txt-color) {
+  background-color: $bg-color;
+  color: $txt-color;
+  padding: func.pxToEm(17);
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: func.pxToEm(11);
+
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  @include btn(var.$clr-bright-blue, white);
+
+  &:hover {
+    background-color: color.scale(var.$clr-bright-blue, $lightness: 30%);
+  }
+}
+
+.btn-secondary {
+  @include btn(white, var.$clr-desaturated-blue);
+
+  &:hover {
+    color: color.scale(var.$clr-bright-blue, $lightness: -50%);
+  }
+}

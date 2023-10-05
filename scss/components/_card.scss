@@ -1,0 +1,12 @@
+@use 'abstracts/functions' as func;
+
+.card {
+  width: 100%;
+  max-width: func.pxToEm(343);
+  background-color: white;
+  border-radius: func.pxToEm(22);
+
+  .top-card-element {
+    border-radius: func.pxToEm(22) func.pxToEm(22) 0 0;
+  }
+}
