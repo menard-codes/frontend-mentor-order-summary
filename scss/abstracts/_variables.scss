@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Red Hat Display';
+  src: url('../../dist/fonts/RedHatDisplay-VariableFont_wght.ttf');
+}
+
+// COLORS:
+// Primary
+$clr-pale-blue: hsl(225, 100%, 94%);
+$clr-bright-blue: hsl(245, 75%, 52%);
+// Neutral
+$clr-very-pale-blue: hsl(225, 100%, 98%);
+$clr-desaturated-blue: hsl(224, 23%, 55%);
+$clr-dark-blue: hsl(223, 47%, 23%);
+
+// TYPOGRAPHY:
+$primary-font-family: 'Red Hat Display', sans-serif;
+$base-font-size: 1rem;
+
+$body-txt-size: $base-font-size;
+$body-txt-weight: 500;
+$body-txt-letter-spacing: 0;
+$body-txt-color: $clr-desaturated-blue;

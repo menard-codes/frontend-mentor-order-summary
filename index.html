@@ -14,24 +14,27 @@
 
     <title>Frontend Mentor | Order summary card</title>
 
-    <link rel="stylesheet" href="./dist/css/index.css" />
+    <link rel="stylesheet" href="./dist/css/main.css" />
   </head>
   <body>
     <main>
-      <div>
+      <div class="card">
         <picture>
           <img
+            class="top-card-element"
             src="./dist/images/illustration-hero.svg"
             alt="Woman on a headset listening to and enjoying a music"
           />
         </picture>
-        <div>
-          <h2>Order Summary</h2>
-          <p>
+        <div
+          class="padding-top-39 padding-bottom-19 padding-left-26 padding-right-26 flex flex-column gap-26"
+        >
+          <h2 class="text-center">Order Summary</h2>
+          <p class="text-center">
             You can now listen to millions of songs, audiobooks, and podcasts on
             any device anywhere you like!
           </p>
-          <div>
+          <div class="plan-overview">
             <img src="./dist/images/icon-music.svg" alt="" />
             <div>
               <p>Annual Plan</p>
@@ -39,19 +42,12 @@
             </div>
             <a href="#">Change</a>
           </div>
-        </div>
-        <div>
-          <a href="#">Proceed to Payment</a>
-          <a href="#">Cancel Order</a>
+          <div class="flex flex-column gap-9 text-center">
+            <a href="#" class="btn-primary">Proceed to Payment</a>
+            <a href="#" class="btn-secondary">Cancel Order</a>
+          </div>
         </div>
       </div>
     </main>
-
-    <footer class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </footer>
   </body>
 </html>

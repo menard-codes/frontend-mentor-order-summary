@@ -1,0 +1,16 @@
+@use 'functions' as func;
+
+@mixin typography($size, $weight, $letter-spacing: 0, $line-height: normal) {
+  font: {
+    size: $size;
+    weight: $weight;
+  }
+  letter-spacing: $letter-spacing;
+  line-height: $line-height;
+}
+
+@mixin lg {
+  @media (min-width: func.pxToEm(1440)) {
+    @content;
+  }
+}

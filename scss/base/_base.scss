@@ -1,0 +1,54 @@
+@use 'abstracts/variables' as var;
+@use 'abstracts/mixins' as mix;
+@use 'abstracts/functions' as func;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+
+  padding: func.pxToEm(16);
+
+  font-family: var.$primary-font-family;
+  font-size: var.$body-txt-size;
+  color: var.$body-txt-color;
+
+  background-color: var.$clr-pale-blue;
+  background-image: url('../../dist/images/pattern-background-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @include mix.lg {
+    background-image: url('../../dist/images/pattern-background-desktop.svg');
+  }
+
+  display: grid;
+  place-content: center;
+}
+
+footer {
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  color: var.$clr-dark-blue;
+}
+
+h2 {
+  @include mix.typography($size: 1.4375 * var.$base-font-size, $weight: 900);
+}
+
+picture,
+img {
+  display: block;
+  max-width: 100%;
+}
