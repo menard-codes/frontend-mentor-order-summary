@@ -1,0 +1,15 @@
+{
+  "name": "order-summary-component-main",
+  "packageManager": "yarn@3.6.3",
+  "scripts": {
+    "build": "gulp"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-purgecss": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.68.0"
+  }
+}
